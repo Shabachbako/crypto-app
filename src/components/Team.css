@@ -1,0 +1,180 @@
+/* Team Section */
+.team-section {
+    background: #4B0082; /* Deep Purple */
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+/* Container */
+.team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Titles */
+.team-subtitle {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+}
+
+.team-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.team-description {
+    max-width: 700px;
+    margin: 10px auto 40px;
+    font-size: 16px;
+}
+
+/* Team Grid */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 Columns on Desktop */
+    gap: 40px;
+    margin-top: 40px;
+}
+
+/* Individual Team Member */
+.team-member {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: slideInLeft 0.8s ease-in-out forwards;
+}
+
+/* Staggered delay for animations */
+.team-member:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.team-member:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.team-member:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+/* Hover effect for team members */
+.team-member:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Team Image */
+.team-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image hover effect */
+.team-member:hover .team-image {
+    transform: scale(1.1);
+}
+
+/* Team Member Info */
+.team-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.team-info p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons svg {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s ease-in-out;
+}
+
+/* Social icon hover effect */
+.social-icons svg:hover {
+    color: #FF69B4; /* Pink highlight */
+    transform: scale(1.2);
+}
+
+/* Mobile Responsiveness (375px) */
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr; /* Single Column */
+        gap: 30px;
+    }
+
+    .team-member {
+        flex-direction: column;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: slideInUp 0.8s ease-in-out forwards;
+    }
+
+    .team-member:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+    .team-member:nth-child(3) {
+        animation-delay: 0.4s;
+    }
+    .team-member:nth-child(4) {
+        animation-delay: 0.6s;
+    }
+
+    .team-image {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,215 @@
+/* Footer Section */
+.footer {
+    background: #4B0082; /* Deep Purple */
+    color: white;
+    padding: 50px 20px 20px;
+    text-align: center;
+    border-top: 2px solid rgba(255, 255, 255, 0.2); /* Added Top Border */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo Section */
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0;
+    animation: slideUp 0.8s ease-in-out forwards 0.2s;
+}
+
+/* Social Icons */
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    background: rgba(255, 255, 255, 0.2);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: slideUp 0.8s ease-in-out forwards 0.3s;
+}
+
+.social-icon:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    text-align: left;
+    opacity: 0;
+    animation: slideUp 0.8s ease-in-out forwards 0.4s;
+}
+
+.footer-links div p {
+    margin: 5px 0;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links div p:hover {
+    color: rgba(255, 255, 255, 0.7);
+    transform: translateX(5px);
+}
+
+/* Newsletter Section */
+.newsletter {
+    opacity: 0;
+    animation: slideUp 0.8s ease-in-out forwards 0.5s;
+}
+
+.newsletter h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.newsletter-box {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 350px;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.newsletter-box:hover {
+    transform: scale(1.05);
+}
+
+.newsletter-box input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+.newsletter-box::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.newsletter-box button {
+    background: #FF00FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.newsletter-box button:hover {
+    background: #E600E6;
+    transform: scale(1.1);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 30px;
+    padding-top: 15px;
+    font-size: 14px;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards 0.6s;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Mobile Responsiveness (375px) */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-links div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-box {
+        flex-direction: column;
+        border-radius: 10px;
+        max-width: 280px;
+    }
+
+    .newsletter-box input {
+        padding: 8px;
+        text-align: center;
+    }
+
+    .newsletter-box button {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .footer-bottom-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
