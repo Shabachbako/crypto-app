@@ -8,7 +8,7 @@ const HowItWorks = () => {
       <div className="container">
         <h4 className="section-subtitle">WHAT IS CRYPTCON</h4>
         <h2 className="section-title">How it Works</h2>
-        <p className="section-description">
+        <p className="section-description1">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         </p>
 

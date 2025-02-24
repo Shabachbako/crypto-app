@@ -24,7 +24,7 @@
 
 /* Logo */
 .logo img {
-    height: 40px;
+    height: 30px;
     width: auto;
 }
 
@@ -150,5 +150,37 @@
 
     .sign-in-btn:hover {
         transform: scale(1.05);
+    }
+}
+
+/* Mobile Responsiveness for 425px screens */
+@media (max-width: 425px) {
+    .navbar {
+        padding: 12px 0; /* Adjust padding for smaller screens */
+    }
+
+    .navbar-container {
+        padding: 0 15px; /* Reduce side padding */
+    }
+
+    .logo img {
+        height: 35px; /* Slightly smaller logo */
+    }
+
+    .menu-icon {
+        font-size: 26px; /* Adjust menu icon size */
+    }
+
+    .nav-menu {
+        width: 75%; /* Slightly larger menu for better spacing */
+    }
+
+    .nav-links {
+        gap: 12px; /* Reduce gap between links */
+    }
+
+    .sign-in-btn {
+        padding: 7px 14px; /* Adjust button size */
+        font-size: 14px;
     }
 }

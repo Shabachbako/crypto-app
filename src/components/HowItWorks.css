@@ -32,10 +32,10 @@
     animation: slideUp 0.8s ease-in-out forwards 0.3s;
 }
 
-.section-description {
+.section-description1 {
     max-width: 700px;
     margin: 10px auto 40px;
-    font-size: 16px;
+    font-size: 14px;
     opacity: 0;
     animation: slideUp 0.8s ease-in-out forwards 0.4s;
 }
@@ -92,7 +92,7 @@
 }
 
 .text-content p {
-    font-size: 16px;
+    font-size: 15px;
     margin: 10px 0 20px;
 }
 
@@ -105,7 +105,7 @@
 }
 
 .features-list li {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
@@ -139,6 +139,59 @@
         width: 200px; /* Further reduce image size for mobile */
     }
 }
+/* Mobile Responsiveness for 425px screens */
+@media (max-width: 425px) {
+    .how-it-works {
+        padding: 60px 15px; /* Adjust padding for a compact layout */
+    }
+
+    .section-title {
+        font-size: 32px; /* Reduce title size for better fit */
+    }
+
+    .section-description {
+        font-size: 14px;
+        max-width: 90%;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px; /* Adjust spacing */
+    }
+
+    .graphic img {
+        width: 180px; /* Reduce image size further */
+    }
+
+    .text-content {
+        text-align: center;
+    }
+
+    .text-content h3 {
+        font-size: 20px; /* Slightly smaller heading */
+    }
+
+    .text-content p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .features-list {
+        padding: 0;
+    }
+
+    .features-list li {
+        font-size: 14px;
+        justify-content: center;
+        transform: none;
+    }
+
+    .features-list li::before {
+        margin-right: 8px;
+    }
+}
+
 
 /* ANIMATIONS */
 @keyframes fadeIn {

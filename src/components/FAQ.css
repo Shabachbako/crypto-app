@@ -24,7 +24,7 @@
 }
 
 .faq-title {
-    font-size: 36px;
+    font-size: 35px;
     font-weight: bold;
     margin-top: 5px;
 }
@@ -32,7 +32,7 @@
 .faq-description {
     max-width: 700px;
     margin: 10px auto 40px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* Tabs */
@@ -104,14 +104,14 @@
 
 /* FAQ Question */
 .faq-question {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
 }
 
 /* FAQ Answer */
 .faq-answer {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.5;
     color: rgba(255, 255, 255, 0.8);
     max-height: 0;
@@ -147,6 +147,49 @@
 
     .faq-item {
         padding: 10px;
+    }
+}
+
+/* Mobile Responsiveness for 425px screens */
+@media (max-width: 425px) {
+    .faq-section {
+        padding: 60px 15px; /* Reduce padding for a better fit */
+    }
+
+    .faq-title {
+        font-size: 30px; /* Adjust heading size */
+    }
+
+    .faq-description {
+        font-size: 14px;
+        max-width: 100%; /* Use full width */
+    }
+
+    .faq-tabs {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px; /* Reduce gap for compact spacing */
+    }
+
+    .faq-tab {
+        font-size: 13px; /* Reduce tab font size */
+    }
+
+    .faq-content {
+        gap: 8px; /* Reduce gap between FAQ items */
+    }
+
+    .faq-item {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .faq-question {
+        font-size: 15px; /* Slightly smaller for mobile */
+    }
+
+    .faq-answer {
+        font-size: 13px;
     }
 }
 

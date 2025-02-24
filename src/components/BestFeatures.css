@@ -36,7 +36,7 @@
 .section-description {
     max-width: 700px;
     margin: 10px auto 40px;
-    font-size: 16px;
+    font-size: 14px;
     opacity: 0;
     animation: slideUp 0.8s ease-in-out forwards 0.4s;
 }
@@ -96,7 +96,7 @@
 
 /* Feature Text */
 .feature-item p {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.6;
 }
 
@@ -112,6 +112,48 @@
         text-align: center;
     }
 }
+/* Mobile Responsiveness for 425px screens */
+@media (max-width: 425px) {
+    .best-features {
+        padding: 60px 15px; /* Adjust padding for compact layout */
+    }
+
+    .section-title {
+        font-size: 30px; /* Reduce title size */
+    }
+
+    .section-description {
+        font-size: 14px;
+        max-width: 90%;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr; /* One column for better stacking */
+        gap: 20px;
+    }
+
+    .feature-item {
+        align-items: center; /* Center-align items */
+        text-align: center;
+        padding: 15px;
+    }
+
+    .feature-icon {
+        font-size: 36px; /* Adjust icon size */
+        margin-bottom: 10px;
+    }
+
+    .feature-item h3 {
+        font-size: 18px; /* Adjust heading size */
+        margin-bottom: 8px;
+    }
+
+    .feature-item p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
+
 
 /* ANIMATIONS */
 @keyframes fadeIn {

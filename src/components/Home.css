@@ -16,8 +16,8 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
-    padding: 50px 20px;
+    max-width: 1000px;
+    padding: 30px 20px;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeIn 0.8s ease-in-out forwards;
@@ -55,13 +55,13 @@
 }
 
 .home-content h1 {
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bold;
 }
 
 .home-content p {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .learn-more-btn {
@@ -81,13 +81,23 @@
     background: #ff4c91;
 }
 
-/* Home Image */
+/* Home Image with Bouncing Effect */
 .home-image img {
-    max-width: 450px;
+    max-width: 400px;
     height: auto;
     opacity: 0;
     transform: translateX(50px);
-    animation: slideInRight 0.8s ease-in-out forwards 0.4s;
+    animation: slideInRight 0.8s ease-in-out forwards 0.4s, bounce 3s infinite ease-in-out;
+}
+
+/* Bouncing Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 /* Mobile Responsiveness (375px) */
@@ -129,6 +139,46 @@
         height: auto;
     }
 }
+
+@media (max-width: 425px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 15px;
+    }
+
+    .home-container {
+        flex-direction: column; /* Stack elements */
+        align-items: center;
+    }
+
+    .home-content {
+        max-width: 100%;
+        margin-bottom: 20px;
+        order: 1; /* Text above image */
+        animation: slideInUp 0.8s ease-in-out forwards 0.2s;
+    }
+
+    .home-image {
+        order: 2; /* Image below text */
+        animation: fadeIn 0.8s ease-in-out forwards 0.4s;
+    }
+
+    .home-content h1 {
+        font-size: 24px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .home-image img {
+        max-width: 80%;
+        height: auto;
+    }
+}
+
 
 /* ANIMATIONS */
 @keyframes fadeIn {

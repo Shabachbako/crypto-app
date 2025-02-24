@@ -87,12 +87,12 @@
 
 /* Team Member Info */
 .team-info h3 {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
 }
 
 .team-info p {
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 10px;
     line-height: 1.5;
 }
@@ -104,7 +104,7 @@
 }
 
 .social-icons svg {
-    font-size: 18px;
+    font-size: 17px;
     color: white;
     cursor: pointer;
     transition: color 0.3s, transform 0.3s ease-in-out;
@@ -146,6 +146,43 @@
         height: 100px;
     }
 }
+
+/* Mobile Responsiveness for 425px screens */
+@media (max-width: 425px) {
+    .team-grid {
+        grid-template-columns: 1fr; /* Single Column */
+        gap: 20px; /* Reduce gap for compact layout */
+    }
+
+    .team-member {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px; /* Reduce spacing */
+        opacity: 0;
+        transform: translateY(30px);
+        animation: slideInUp 0.8s ease-in-out forwards;
+    }
+
+    .team-image {
+        width: 90px; /* Reduce image size */
+        height: 90px;
+        border-width: 3px; /* Slightly thinner border */
+    }
+
+    .team-info h3 {
+        font-size: 16px; /* Adjust heading size */
+    }
+
+    .team-info p {
+        font-size: 13px; /* Adjust paragraph size */
+        margin-bottom: 8px;
+    }
+
+    .social-icons svg {
+        font-size: 16px; /* Reduce social icons */
+    }
+}
+
 
 /* ANIMATIONS */
 @keyframes fadeIn {
