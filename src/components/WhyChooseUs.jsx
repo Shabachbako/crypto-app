@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom"; // Import NavLink
 import "./WhyChooseUs.css"; // Import styles
 import { FaCheckCircle } from "react-icons/fa"; // Import check icon
 import choiceImage from "../assets/whychoices.png"; // Ensure correct path
@@ -34,8 +35,10 @@ const WhyChooseUs = () => {
             </li>
           </ul>
 
-          {/* Contact Button */}
-          <button className="contact-btn">CONTACT INFO</button>
+          {/* Contact Button (Now a NavLink) */}
+          <NavLink to="/contact" className="contact-btn">
+            CONTACT INFO
+          </NavLink>
         </div>
       </div>
     </section>

@@ -19,7 +19,7 @@ const Home = () => {
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
             accusantium doloremque laudantium, totam rem.
           </p>
-          <button className="learn-more-btn">Learn More</button>
+          <button className="learn-more-btn">Get Started</button>
         </div>
         <div className="home-image">
           <img src={cryptoImage} alt="Crypto Illustration" />
