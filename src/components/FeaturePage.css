@@ -1,0 +1,28 @@
+.feature-hero {
+    background: #4B0082; /* Deep Purple */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    width: 100vw; /* Full width */
+    overflow: hidden;
+}
+
+.feature-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.feature-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.feature-container p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.feature-container span {
+    opacity: 0.7;
+}

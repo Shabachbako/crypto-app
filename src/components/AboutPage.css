@@ -1,0 +1,28 @@
+.about-hero {
+    background: #4B0082; /* Deep Purple */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    width: 100vw; /* Full width */
+    overflow: hidden;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.about-container p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.about-container span {
+    opacity: 0.7;
+}

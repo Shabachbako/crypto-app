@@ -1,0 +1,32 @@
+/* Contact Page Hero Section */
+.contact-hero {
+    background: #4B0082; /* Deep Purple */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    width: 100vw; /* Full width */
+    overflow: hidden;
+}
+
+/* Contact Container */
+.contact-container1 {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Title Styling */
+.contact-container1 h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Breadcrumb Navigation */
+.contact-container1 p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.contact-container1 span {
+    opacity: 0.7;
+}

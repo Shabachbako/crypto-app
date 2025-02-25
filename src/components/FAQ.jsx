@@ -28,6 +28,10 @@ const FAQ = () => {
   const [activeTab, setActiveTab] = useState("General");
   const [activeQuestion, setActiveQuestion] = useState(null);
 
+  const toggleQuestion = (index) => {
+    setActiveQuestion(activeQuestion === index ? null : index);
+  };
+
   return (
     <section className="faq-section">
       <div className="faq-container">
@@ -53,16 +57,13 @@ const FAQ = () => {
         {/* FAQ Questions */}
         <div className="faq-content">
           {faqData[activeTab].map((item, index) => (
-            <div key={index} className="faq-item">
-              <div 
-                className="faq-question" 
-                onClick={() => setActiveQuestion(activeQuestion === index ? null : index)}
-              >
-                {item.question}
-              </div>
-              {activeQuestion === index && (
-                <div className="faq-answer">{item.answer}</div>
-              )}
+            <div 
+              key={index} 
+              className={`faq-item ${activeQuestion === index ? "active" : ""}`}
+              onClick={() => toggleQuestion(index)}
+            >
+              <div className="faq-question">{item.question}</div>
+              <div className="faq-answer">{item.answer}</div>
             </div>
           ))}
         </div>

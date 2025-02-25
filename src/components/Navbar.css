@@ -76,6 +76,12 @@
     transform: translateY(-2px);
 }
 
+.nav-links li .active {
+    color: #ffcc00; /* Change color for active link */
+    font-weight: bold;
+    border-bottom: 2px solid #ffcc00; /* Underline active link */
+  }
+  
 /* Sign In button */
 .sign-in-btn {
     background: #FF69B4;

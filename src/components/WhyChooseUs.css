@@ -1,0 +1,116 @@
+.why-choose-section {
+    background: #4B0082; /* Deep Purple */
+    padding: 80px 20px;
+    color: white;
+}
+
+.why-choose-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+/* Left Image Section */
+.why-choose-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-choose-image img {
+    width: 70%;
+    max-width: 500px;
+}
+
+/* Right Text Section */
+.why-choose-text {
+    flex: 1;
+}
+
+.why-choose-text h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.why-choose-description {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Features List */
+.why-choose-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.why-choose-list li {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+/* Checkmark Icon */
+.check-icon {
+    color: white;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* Contact Button */
+.contact-btn {
+    background: #E573E5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-btn:hover {
+    background: #D14DD1;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    .why-choose-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .why-choose-image,
+    .why-choose-text {
+        width: 100%;
+    }
+
+    .why-choose-image img {
+        max-width: 90%;
+    }
+
+    .why-choose-text h2 {
+        font-size: 24px;
+    }
+
+    .why-choose-description {
+        font-size: 14px;
+    }
+
+    .why-choose-list li {
+        font-size: 14px;
+    }
+
+    .contact-btn {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}

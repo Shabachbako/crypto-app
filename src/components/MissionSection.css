@@ -1,0 +1,126 @@
+.mission-section {
+    background: #4B0082; /* Deep Purple */
+    padding: 90px 20px;
+    color: white;
+}
+
+.mission-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+/* Left Text Section */
+.mission-text {
+    flex: 1;
+    padding: 0 30px;
+}
+
+.mission-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.mission-text .subtitle {
+    font-size: 13px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.mission-text .description {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* Right Image Section */
+.mission-video {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-image {
+    width: 100%;
+    max-width: 500px;
+}
+
+.play-icon {
+    position: absolute;
+    background: white;
+    color: #4B0082;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 50%; /* Makes it a perfect circle */
+}
+
+.play-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Box */
+.modal {
+    background: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Close Button */
+.close-modal {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    .mission-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mission-text, 
+    .mission-video {
+        width: 100%;
+    }
+
+    .video-image {
+        max-width: 90%;
+    }
+
+    .modal iframe {
+        width: 90%;
+        height: 50vw;
+    }
+}

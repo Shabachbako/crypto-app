@@ -1,0 +1,69 @@
+.crypto-section {
+    background: #4B0082; /* Deep Purple */
+    padding: 120px 20px;
+    color: white;
+}
+
+.crypto-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+/* Left Image Section */
+.crypto-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crypto-image img {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Right Text Section */
+.crypto-text {
+    flex: 1;
+}
+
+.crypto-text h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.crypto-text p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    .crypto-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .crypto-image, 
+    .crypto-text {
+        width: 100%;
+    }
+
+    .crypto-image img {
+        max-width: 90%;
+    }
+
+    .crypto-text h2 {
+        font-size: 24px;
+    }
+
+    .crypto-text p {
+        font-size: 12px;
+    }
+}
