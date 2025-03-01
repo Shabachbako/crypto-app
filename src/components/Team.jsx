@@ -12,10 +12,10 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 const Team = () => {
   const teamMembers = [
-    { id: 1, name: "Alice Johnson", role: "CEO & Blockchain Strategist", image: member1 },
-    { id: 2, name: "Michael Smith", role: "Chief Technology Officer", image: member2 },
-    { id: 3, name: "Sophia Brown", role: "Head of Marketing & Partnerships", image: member3 },
-    { id: 4, name: "David Lee", role: "Lead Blockchain Developer", image: member4 }
+    { id: 1, name: "Michael Smith", role: "CEO & Blockchain Strategist", image: member1 },
+    { id: 2, name: "Alice Johnson", role: "Chief Technology Officer", image: member2 },
+    { id: 3, name: "David Lee", role: "Head of Marketing & Partnerships", image: member3 },
+    { id: 4, name: "Sophia Brown", role: "Lead Blockchain Developer", image: member4 }
   ];
 
   return (
