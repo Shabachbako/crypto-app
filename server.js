@@ -9,9 +9,9 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// ✅ CORS Configuration (Ensures React can communicate with the backend)
+// ✅ CORS Configuration (Allow both localhost & Netlify frontend)
 const corsOptions = {
-  origin: "http://localhost:5173", // Adjust for production if needed
+  origin: ["http://localhost:5173", "https://cryptcorn.netlify.app"], // Allow local & deployed frontend
   methods: "POST",
   allowedHeaders: ["Content-Type"],
 };

@@ -9,8 +9,8 @@ function AboutPages() {
   return (
     <>
       <AboutPage />
-      <HowItWorks />
       <MissionSection />
+      <HowItWorks />
       <CryptoInvestment />
       <Team />
     </>

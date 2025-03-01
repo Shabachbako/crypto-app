@@ -3,24 +3,54 @@ import "./FAQ.css";
 
 const faqData = {
   General: [
-    { question: "What is ICO Crypto?", answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry..." },
-    { question: "How can I participate in the ICO Token sale?", answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry..." }
+    { 
+      question: "What is cryptocurrency?", 
+      answer: "Cryptocurrency is a digital or virtual currency that uses cryptography for security and operates on decentralized blockchain technology." 
+    },
+    { 
+      question: "How can I buy cryptocurrency?", 
+      answer: "You can buy cryptocurrency through exchanges like Binance, Coinbase, or Kraken by creating an account and purchasing with fiat currency or another crypto asset." 
+    }
   ],
-  "Pre-ICO & ICO": [
-    { question: "What is the difference between Pre-ICO and ICO?", answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry..." },
-    { question: "How is the ICO price determined?", answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry..." }
+  "Crypto Trading": [
+    { 
+      question: "What is the difference between spot trading and futures trading?", 
+      answer: "Spot trading involves buying and selling cryptocurrencies for immediate delivery, while futures trading allows users to speculate on the future price without owning the asset." 
+    },
+    { 
+      question: "How is the price of a cryptocurrency determined?", 
+      answer: "Crypto prices are determined by supply and demand, market liquidity, investor sentiment, and broader economic factors." 
+    }
   ],
-  Tokens: [
-    { question: "How do I store my tokens safely?", answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry..." },
-    { question: "Are tokens transferable?", answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry..." }
+  Security: [
+    { 
+      question: "How do I store my cryptocurrency safely?", 
+      answer: "You can store cryptocurrencies in cold wallets (hardware wallets like Ledger, Trezor) or hot wallets (online wallets with encryption). Always enable 2FA and keep private keys secure." 
+    },
+    { 
+      question: "Are cryptocurrency transactions reversible?", 
+      answer: "No, once a cryptocurrency transaction is confirmed on the blockchain, it cannot be reversed. Always double-check recipient addresses before sending funds." 
+    }
   ],
-  Client: [
-    { question: "What are the benefits of using ICO tokens?", answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry..." },
-    { question: "How do I create an ICO wallet?", answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry..." }
+  Wallets: [
+    { 
+      question: "What are the benefits of using a crypto wallet?", 
+      answer: "Crypto wallets provide secure storage, easy access, and control over your digital assets, ensuring safety from exchange hacks or third-party risks." 
+    },
+    { 
+      question: "How do I create a cryptocurrency wallet?", 
+      answer: "You can create a crypto wallet by using trusted providers like MetaMask, Trust Wallet, or hardware wallets. Follow the setup instructions and securely store your recovery phrase." 
+    }
   ],
-  Legal: [
-    { question: "Is ICO legal in my country?", answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry..." },
-    { question: "What are the regulatory concerns for ICOs?", answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry..." }
+  Regulations: [
+    { 
+      question: "Is cryptocurrency legal in my country?", 
+      answer: "The legality of cryptocurrency varies by country. Some nations regulate and support crypto trading, while others impose restrictions or bans. Always check local regulations." 
+    },
+    { 
+      question: "What are the tax implications of cryptocurrency trading?", 
+      answer: "Many countries treat cryptocurrency as taxable assets, requiring traders to report gains or losses. Consult with a financial expert for compliance in your region." 
+    }
   ]
 };
 
@@ -38,7 +68,7 @@ const FAQ = () => {
         <h5 className="faq-subtitle">FAQs</h5>
         <h2 className="faq-title">Frequently Asked Questions</h2>
         <p className="faq-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          Find answers to the most common questions about cryptocurrency, wallets, security, and regulations.
         </p>
 
         {/* Tab Navigation */}

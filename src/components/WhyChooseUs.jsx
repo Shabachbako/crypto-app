@@ -17,21 +17,24 @@ const WhyChooseUs = () => {
         <div className="why-choose-text">
           <h2>Why Choose Us?</h2>
           <p className="why-choose-description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer.
+            We are committed to providing a secure, transparent, and seamless cryptocurrency 
+            trading experience. Our cutting-edge platform ensures fast transactions, reliable 
+            customer support, and top-tier security protocols.
           </p>
 
           {/* Features List */}
           <ul className="why-choose-list">
             <li>
-              <FaCheckCircle className="check-icon" /> Lorem Ipsum is simply dummy text of the printing and typesetting
+              <FaCheckCircle className="check-icon" /> <strong>Secure & Reliable Transactions:</strong> Our platform uses 
+              state-of-the-art encryption and blockchain security measures.
             </li>
             <li>
-              <FaCheckCircle className="check-icon" /> Lorem Ipsum is simply dummy text of the printing and typesetting
+              <FaCheckCircle className="check-icon" /> <strong>Low Fees & High Speed:</strong> Experience lightning-fast 
+              transactions with minimal processing fees.
             </li>
             <li>
-              <FaCheckCircle className="check-icon" /> Lorem Ipsum is simply dummy text of the printing and typesetting
+              <FaCheckCircle className="check-icon" /> <strong>24/7 Customer Support:</strong> Our expert support team 
+              is always available to assist you.
             </li>
           </ul>
 

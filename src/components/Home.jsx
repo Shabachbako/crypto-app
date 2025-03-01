@@ -14,15 +14,16 @@ const Home = () => {
       </div>
       <div className="home-container">
         <div className="home-content">
-          <h1>Invest In Cryptocoin <br /> Way To Trade</h1>
+          <h1>Secure & Smart Crypto Investments</h1>
           <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-            accusantium doloremque laudantium, totam rem.
+            Take control of your financial future with seamless cryptocurrency 
+            trading and investment solutions. Buy, sell, and manage digital assets 
+            with confidence on a trusted platform.
           </p>
           <button className="learn-more-btn">Get Started</button>
         </div>
         <div className="home-image">
-          <img src={cryptoImage} alt="Crypto Illustration" />
+          <img src={cryptoImage} alt="Crypto Investment Illustration" />
         </div>
       </div>
     </section>

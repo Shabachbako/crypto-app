@@ -8,8 +8,8 @@ function FeaturePages() {
   return (
     <>
     <FeaturePage />
-    <BestFeatures />
     <WhyChooseUs />
+    <BestFeatures />
     </>
   );
 }

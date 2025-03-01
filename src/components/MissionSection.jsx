@@ -21,18 +21,16 @@ const MissionSection = () => {
         <div className="mission-text">
           <h2>Our Mission</h2>
           <p className="subtitle">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            Empowering a Decentralized Future with Innovation & Trust
           </p>
           <p className="description">
-            Bitcoin is different than any currency you’ve used before, so it’s very important to 
-            understand some key points. You can use them to send or receive any amount of money, 
-            with anyone, anywhere in the world, at very low cost. Bitcoin payments are impossible 
-            to block and safety.
+            Cryptcon is committed to revolutionizing the financial world through blockchain technology. 
+            Our mission is to create a secure, transparent, and accessible cryptocurrency ecosystem that 
+            empowers individuals and businesses worldwide.
             <br /><br />
-            Bitcoin is different than any currency you’ve used before, so it’s very important to 
-            understand some key points. You can use them to send or receive any amount of money, 
-            with anyone, anywhere in the world, at very low cost. Bitcoin payments are impossible 
-            to block and safety.
+            We believe in the power of decentralized finance (DeFi) to remove barriers, reduce transaction 
+            costs, and provide financial opportunities to everyone, regardless of their location or 
+            background. Join us in shaping the future of digital assets and financial freedom.
           </p>
         </div>
 
@@ -55,7 +53,7 @@ const MissionSection = () => {
             <iframe
               width="800"
               height="450"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ" // Change YouTube link here
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ" // Update with actual video link
               title="YouTube Video"
               frameBorder="0"
               allowFullScreen

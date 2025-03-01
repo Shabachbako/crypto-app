@@ -12,19 +12,21 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 const Team = () => {
   const teamMembers = [
-    { id: 1, name: "John Doe", role: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor it amet, consectetur", image: member1 },
-    { id: 2, name: "John Doe", role: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor it amet, consectetur", image: member2 },
-    { id: 3, name: "John Doe", role: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor it amet, consectetur", image: member3 },
-    { id: 4, name: "John Doe", role: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor it amet, consectetur", image: member4 }
+    { id: 1, name: "Alice Johnson", role: "CEO & Blockchain Strategist", image: member1 },
+    { id: 2, name: "Michael Smith", role: "Chief Technology Officer", image: member2 },
+    { id: 3, name: "Sophia Brown", role: "Head of Marketing & Partnerships", image: member3 },
+    { id: 4, name: "David Lee", role: "Lead Blockchain Developer", image: member4 }
   ];
 
   return (
     <section className="team-section">
       <div className="team-container">
-        <h5 className="team-subtitle">Meet The Team</h5>
-        <h2 className="team-title">Our Team</h2>
+        <h5 className="team-subtitle">Meet Our Experts</h5>
+        <h2 className="team-title">The Visionaries Behind Cryptcon</h2>
         <p className="team-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          Our dedicated team of blockchain experts, developers, and strategists is committed to 
+          revolutionizing the crypto industry. With years of experience in finance, technology, and 
+          decentralized ecosystems, we strive to bring you a secure and innovative platform.
         </p>
 
         <div className="team-grid">
