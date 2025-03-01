@@ -9,13 +9,8 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// ✅ CORS Configuration (Allow both localhost & Netlify frontend)
-const corsOptions = {
-  origin: ["http://localhost:5173", "https://cryptcorn.netlify.app"], // Allow local & deployed frontend
-  methods: "POST",
-  allowedHeaders: ["Content-Type"],
-};
-app.use(cors(corsOptions));
+// ✅ Allow all CORS (Works on any device)
+app.use(cors());
 app.use(express.json()); // Middleware to parse JSON requests
 
 // ✅ Check if environment variables are loaded correctly
