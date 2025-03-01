@@ -7,7 +7,7 @@ import BestFeatures from "./components/BestFeatures";
 import Team from "./components/Team";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
-import AboutPages from "./components/AboutPages"; // About Pages Component
+import AboutPages from "./components/AboutPagess"; // About Pages Component
 import FeaturePages from "./components/FeaturePages"; // About Pages Component
 import FAQPages from "./components/FAQPages"; // About Pages Component
 import ContactPages from "./components/ContactPages"; // About Pages Component
